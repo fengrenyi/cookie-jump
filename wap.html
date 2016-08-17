@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+</head>
+<body>
+<script type="text/javascript">
+    //设置cookie
+    function setCookie(name, value, expires, path, domain, secure) {
+      var cookieName = encodeURIComponent(name) + '=' + encodeURIComponent(value);
+      if (expires instanceof Date) {
+         cookieName += '; expires=' + expires;
+      }
+      if (path) {
+         cookieName += '; path=' + path;
+      }
+      if (domain) {
+         cookieName += '; domain=' + domain;
+      }
+      if (secure) {
+         cookieName += '; secure';
+      }
+      document.cookie = cookieName;
+    }
+    
+   function _cookies(){
+        setCookie('pcm', '1', 1,'','.pincai360.com',false);
+        window.location.href = '//www.pincai360.com/#m';
+   }    
+ </script>  
+</body>
+</html>
